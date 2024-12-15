@@ -13,4 +13,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added listas.html
 - Added midia.html
 - Added tabelas.html
-- Added forms.html
+- Added exercicio.html on branch exercicio_html
