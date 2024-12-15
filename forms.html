@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <nav>
+        <a href="./index.html">Home</a>
+    </nav>
+    <hr />
+    <form>
+        <table>
+
+            <thead>
+                <th>
+                    <caption><b>Tipos de input</b></caption>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="nome">Nome completo(input txt)</label><br />
+                        <input id="nome" type="text" placeholder="Seu nome"><br />
+                    </td>
+                    <td>
+                        <label for="email">Insira seu email(input email)</label><br />
+                        <input id="email" type="email" placeholder="Seu email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Tel">Insira seu telefone(input tel)</label><br />
+                        <input id="Tel" type="tel" placeholder="(00) 0 0000-0000">
+                    </td>
+                    <td>
+                        <label for="idade">Insira sua idade(input number)</label><br />
+                        <input id="number" type="number" min="0" max="112" step="1">
+                        <!--Step define o numero de numero contandos ex.: 2 em 2 step="2"-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Envie uma foto(input file)</label><br />
+                        <input type="file">
+                    </td>
+                    <td>
+                        <label>Selecione uma cor(input color)</label><br />
+                        <input type="color">
+                    </td>
+                <tr>
+                    <td>
+                        Lorem ipsum dolor sit amet,<br />
+                        consectetur adipisicing elit.
+                    </td>
+                    <td>
+                        <input id="termos" type="checkbox"><label for="termos">Aceito todos os termos(input
+                            checkbox)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <hr />
+                    </td>
+                    <td>
+                        <!--Inserindo os botões-->
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </td>
+                </tr>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <label>Qual o seu País?</label>
+            <select name="pais" placeholder="Selecione um pais">
+                <option value="pais0">Selecione um pais</option>
+                <option value="pais1">Brasil</option>
+                <option value="pais2">Usa</option>
+                <option value="pais3">Arg</option>
+            </select>
+            <br />
+            <label>
+                <select name="Qual o seu pais?">
+                    <option value="pais 1">brasil</option>
+                    <option value="pais 2">USA</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            Voce esta gostando do curso?(input radio)
+        </p>
+        <input type="radio" name=" sim ou nao" id="sim" /><label for="sim">sim</label>
+        <input type="radio" name=" sim ou nao" id="nao" /><label for="nao">não</label>
+        <!--o atributo name="" inpede que ambas as opções sejam selecionadas ao mesmo tempo-->
+        <p>
+            <label for="opinão">Como podemos melhores(tag textarea)</label><br />
+            <textarea id="opinão"></textarea>
+        </p>
+
+    </form>
+</body>
+
+</html>
